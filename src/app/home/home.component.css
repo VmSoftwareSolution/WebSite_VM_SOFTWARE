@@ -1,0 +1,39 @@
+.container {
+    position: fixed;    
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(31, 30, 30, 1);
+}
+  
+.image-left {
+    width: 60%;
+    margin-left: 2%;
+    object-fit: cover;
+}
+
+.image-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Text */
+.line{
+    color: rgba(255, 103, 37, 1);
+    margin-left: 2%;
+    font-size: 40px;
+}
+  
+
+.content {
+    color: #fff;
+    margin-left: 2%;
+    font-size: 40px;
+}
+
