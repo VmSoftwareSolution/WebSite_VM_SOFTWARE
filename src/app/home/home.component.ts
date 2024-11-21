@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavbarComponent } from '../components/navbar/navbar.component';
 import { AboutComponent } from '../about/about.component';
 import { ServiceComponent } from "../service/service.component";
+import { ContactComponent } from '../contact/contact.component';
 
 @Component({
   selector: 'app-home',
@@ -9,10 +10,14 @@ import { ServiceComponent } from "../service/service.component";
   imports: [
     NavbarComponent,
     AboutComponent,
-    ServiceComponent
+    ServiceComponent,
+    ContactComponent
 ],
   templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  styleUrl: './home.component.css',
+  host: {
+    'ngSkipHydration': 'true'
+  }
 })
 export default class HomeComponent {
 

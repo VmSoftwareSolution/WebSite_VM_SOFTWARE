@@ -5,7 +5,10 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './about.component.html',
-  styleUrl: './about.component.css'
+  styleUrl: './about.component.css',
+  host: {
+    'ngSkipHydration': 'true'
+  }
 })
 export class AboutComponent {
 

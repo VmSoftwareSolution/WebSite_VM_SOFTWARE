@@ -1,0 +1,38 @@
+<div class="max-w-4xl mx-auto bg-gradient-to-r from-orange-500 to-yellow-400 p-10 rounded-xl shadow-lg animate__animated animate__fadeIn animate__delay-0.5s hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out">
+  <h2 class="text-4xl font-bold text-white mb-8 animate__animated animate__fadeIn animate__delay-1s">Contact us</h2>
+
+  <!-- Message successfully or error -->
+  <div *ngIf="formStatus" class="p-4 mb-6 rounded-lg" [ngClass]="formStatus.success ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'">
+    <p class="font-semibold">{{ formStatus.message }}</p>
+  </div>
+
+  <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="space-y-8">
+    <div class="animate__animated animate__fadeIn animate__delay-1.5s">
+      <label for="name" class="text-xl text-white">Nombre completo</label>
+      <input formControlName="name" class="w-full px-6 py-4 bg-white text-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out" placeholder="Nombre completo">
+    </div>
+    <div class="animate__animated animate__fadeIn animate__delay-2s">
+      <label for="email" class="text-xl text-white">Correo Electronico</label>
+      <input formControlName="email" class="w-full px-6 py-4 bg-white text-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out" placeholder="Correo electronico">
+    </div>
+    <div class="animate__animated animate__fadeIn animate__delay-2.5s">
+      <label for="company" class="text-xl text-white">Empresa</label>
+      <input formControlName="company" class="w-full px-6 py-4 bg-white text-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out" placeholder="Nombre de la empresa">
+    </div>
+    <div class="animate__animated animate__fadeIn animate__delay-3s">
+      <label for="service" class="text-xl text-white">En qué servicio estás interesado?</label>
+      <select formControlName="service" class="w-full px-6 py-4 bg-white text-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out">
+        <option value="select">Seleccionar servicio</option>
+        <option>Desarrollo Movil</option>
+        <option>Desarrollo Pagina Web</option>
+        <option>Desarrollo Aplicacion PC</option>
+        <option>Refactorizacion</option>
+      </select>
+    </div>
+    <div class="animate__animated animate__fadeIn animate__delay-3.5s">
+      <label for="project" class="text-xl text-white">Cuéntanos más de tu idea/proyecto</label>
+      <textarea formControlName="project" class="w-full px-6 py-4 bg-white text-gray-900 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 ease-in-out" rows="5" placeholder="Cuéntanos más de tu idea/proyecto"></textarea>
+    </div>
+    <button type="submit" class="w-full py-4 bg-orange-600 text-white font-semibold rounded-lg hover:bg-orange-500 transition-all duration-300 ease-in-out animate__animated animate__fadeIn animate__delay-4s">Enviar mensaje</button>
+  </form>
+</div>
