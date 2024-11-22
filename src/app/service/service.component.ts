@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './service.component.html',
   styleUrl: './service.component.css',
   host: {
-    'ngSkipHydration': 'true'
+    'ngSkipHydration': 'true' //NOTE: this is for converting website from dynamic to dynamic, Angular does not take the control
   }
 })
 export class ServiceComponent {
