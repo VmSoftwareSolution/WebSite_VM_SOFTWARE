@@ -16,7 +16,7 @@ import { ContactComponent } from '../contact/contact.component';
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   host: {
-    'ngSkipHydration': 'true'
+    'ngSkipHydration': 'true' //NOTE: this is for converting website from dynamic to dynamic, Angular does not take the control
   }
 })
 export default class HomeComponent {

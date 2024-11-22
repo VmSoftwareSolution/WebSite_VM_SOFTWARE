@@ -3,42 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Who We Are</title>
+    <title>What We Do</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
-<body class="text-white bg-customBackground">
+<body class="bg-customBackground text-white">
 
     <!-- Hero Section -->
-    <div class="text-left py-20 pl-8">
-        <h1 class="text-4xl md:text-5xl font-extrabold mb-4">WHAT WE DO</h1>
-        <h2 class="text-xl md:text-2xl text-gray-400 mb-6">MORE JOB SOFTWARE</h2>
+    <div class="text-left py-20 px-6 md:px-8">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4">WHAT WE DO</h1>
+        <h2 class="text-xl sm:text-2xl text-gray-400 mb-6">MORE JOB SOFTWARE</h2>
         <!-- Línea horizontal alineada a la izquierda -->
-        <div class="w-48 h-1 bg-orange-500 mb-8"></div>
+        <div class="w-24 sm:w-48 h-1 bg-orange-500 mb-8"></div>
     </div>
-    
 
     <!-- Content Section -->
-    <div class="flex flex-col md:flex-row justify-between items-start px-8 py-16 md:px-32">
+    <div class="px-6 py-16 sm:px-8 md:px-16 lg:px-32">
 
-        <!-- Sección de Texto con fondo naranja -->
-        <div class="flex-1 md:flex md:flex-row bg-orange-500 p-16 rounded-xl shadow-xl mt-8 md:mt-0 transition-transform duration-500 ease-in-out transform hover:scale-105 hover:shadow-2xl">
-        
-            <!-- Sección de Contenido de Texto (Alineado a la izquierda) -->
-            <div class="flex-1 md:pl-12 flex flex-col justify-center items-start text-left space-y-6">
-        
-                <!-- Espacio vacío para futuras imágenes o contenido -->
-                <div class="flex-1"></div>
-        
-            </div>
-        
-            <!-- Tarjetas de Servicios -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-8 w-full">
-        
-                <!-- Tarjeta de Páginas Web -->
-                <div class="flex flex-col bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300 h-[320px]">
+        <!-- Section of text with background color orange -->
+        <div class="bg-orange-500 p-8 sm:p-10 md:p-16 rounded-xl shadow-xl mt-8 md:mt-0 transition-transform duration-500 ease-in-out transform hover:scale-105 hover:shadow-2xl">
+
+            <!-- Section of card using Flexbox -->
+            <div class="flex flex-wrap justify-center gap-8">
+
+                <!-- Card website -->
+                <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 text-center flex flex-col items-center max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg transition-all transform hover:scale-105 hover:shadow-2xl">
                     <div class="flex justify-center mb-4">
-                        <i class="fas fa-laptop-code text-4xl text-orange-500"></i> <!-- Icono de Desarrollo Web -->
+                        <i class="fas fa-laptop-code text-4xl text-orange-500"></i> <!-- Icon siteWeb -->
                     </div>
                     <h4 class="text-2xl font-bold text-orange-500 mb-4">Web Development</h4>
                     <p class="text-lg text-gray-700 mb-4">
@@ -46,11 +37,11 @@
                     </p>
                     <a href="#web" class="text-orange-500 font-semibold hover:underline">Learn More</a>
                 </div>
-        
-                <!-- Tarjeta de Aplicaciones de PC -->
-                <div class="flex flex-col bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300 h-[320px]">
+
+                <!-- Card app Pc -->
+                <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 text-center flex flex-col items-center max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg transition-all transform hover:scale-105 hover:shadow-2xl">
                     <div class="flex justify-center mb-4">
-                        <i class="fas fa-desktop text-4xl text-orange-500"></i> <!-- Icono de Aplicaciones de PC -->
+                        <i class="fas fa-desktop text-4xl text-orange-500"></i> <!-- Icon  App PC -->
                     </div>
                     <h4 class="text-2xl font-bold text-orange-500 mb-4">PC Applications</h4>
                     <p class="text-lg text-gray-700 mb-4">
@@ -58,11 +49,11 @@
                     </p>
                     <a href="#pc" class="text-orange-500 font-semibold hover:underline">Learn More</a>
                 </div>
-        
-                <!-- Tarjeta de Aplicaciones Móviles -->
-                <div class="flex flex-col bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300 h-[320px]">
+
+                <!-- Card app movil -->
+                <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 text-center flex flex-col items-center max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg transition-all transform hover:scale-105 hover:shadow-2xl">
                     <div class="flex justify-center mb-4">
-                        <i class="fas fa-mobile-alt text-4xl text-orange-500"></i> <!-- Icono de Aplicaciones Móviles -->
+                        <i class="fas fa-mobile-alt text-4xl text-orange-500"></i> <!-- Icon  App movil -->
                     </div>
                     <h4 class="text-2xl font-bold text-orange-500 mb-4">Mobile Applications</h4>
                     <p class="text-lg text-gray-700 mb-4">
@@ -70,26 +61,23 @@
                     </p>
                     <a href="#mobile" class="text-orange-500 font-semibold hover:underline">Learn More</a>
                 </div>
-        
-                <!-- Tarjeta de Refactorización de Código -->
-                <div class="flex flex-col bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300 h-[320px]">
+
+                <!-- Card refactor code -->
+                <div class="bg-white rounded-xl shadow-lg p-6 sm:p-8 text-center flex flex-col items-center max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg transition-all transform hover:scale-105 hover:shadow-2xl">
                     <div class="flex justify-center mb-4">
-                        <i class="fas fa-code-branch text-4xl text-orange-500"></i> <!-- Icono de Refactorización de Código -->
+                        <i class="fas fa-code-branch text-4xl text-orange-500"></i> <!-- Icon refactor code-->
                     </div>
                     <h4 class="text-2xl font-bold text-orange-500 mb-4">Code Refactoring</h4>
                     <p class="text-lg text-gray-700 mb-4">
                         We help improve the performance, readability, and maintainability of your existing code with our refactoring services.
                     </p>
-                    <a href="#refactor" class="text-orange-500 font-semibold hover:underline">Learn More</a>
+                    <a href="#code" class="text-orange-500 font-semibold hover:underline">Learn More</a>
                 </div>
-        
+
             </div>
-        
         </div>
-        
+
     </div>
-    
-    
 
 </body>
 </html>

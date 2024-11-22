@@ -10,11 +10,11 @@
 
     <!-- Navbar -->
     <div>
-        <app-navbar class="bg-[#1e1e1e] p-6 text-center text-xl font-semibold text-white shadow-lg"></app-navbar>
+        <app-navbar class="bg-[#1e1e1e] p-4 sm:p-6 text-center text-xl font-semibold text-white shadow-lg"></app-navbar>
     </div>
 
     <!-- Main Container -->
-    <div class="flex flex-col md:flex-row justify-center md:justify-between items-center py-24 px-8 md:px-32">
+    <div class="flex flex-col md:flex-row justify-center md:justify-between items-center py-16 sm:py-24 px-8 sm:px-16 md:px-32">
 
         <!-- Left Container: Image and Text -->
         <div class="flex flex-col items-center w-full md:w-1/2 mb-12 md:mb-0">
@@ -26,16 +26,16 @@
 
             <!-- Content Below Left Image -->
             <div class="flex flex-col justify-center items-center text-center space-y-6 mt-8">
-                <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight transform transition-transform duration-500 hover:scale-105">We provide creative solutions</h1>
-                <h2 class="text-lg md:text-xl text-gray-400">to turn your ideas into digital reality with innovation and precision.</h2>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white leading-tight transform transition-transform duration-500 hover:scale-105">We provide creative solutions</h1>
+                <h2 class="text-sm sm:text-lg md:text-xl text-gray-400">to turn your ideas into digital reality with innovation and precision.</h2>
 
-                <div class="w-24 h-1 bg-[#FFA500] mx-auto mb-8"></div>
+                <div class="w-24 h-1 bg-orange-500 mx-auto mb-8"></div>
 
-                <p class="text-sm md:text-base text-gray-400 max-w-xl">Our team of experts is committed to delivering high-performance software solutions, ensuring scalability, seamless integration, and cutting-edge technology.</p>
+                <p class="text-xs sm:text-sm md:text-base text-gray-400 max-w-xl">Our team of experts is committed to delivering high-performance software solutions, ensuring scalability, seamless integration, and cutting-edge technology.</p>
 
                 <!-- Call to Action Button -->
                 <div class="flex justify-center mt-6">
-                    <a href="#services" class="bg-[#FFA500] text-black px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#e68a00] transition duration-300 transform hover:scale-105">Explore Our Services</a>
+                    <a href="#services" class="bg-orange-500 text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-[#e68a00] transition duration-300 transform hover:scale-105">Explore Our Services</a>
                 </div>
             </div>
 
@@ -49,7 +49,7 @@
     </div>
 
     <!-- App About Section with a different background color -->
-    <div class="bg-[rgba(41,40,40,1)] py-16 px-8 md:px-32">
+    <div class="bg-[rgba(41,40,40,1)] py-12 sm:py-16 px-8 sm:px-16 md:px-32">
         <app-about></app-about>
     </div>
 
@@ -58,8 +58,8 @@
         <app-service></app-service>
     </div>
 
-    <!-- App Contact Us with a equals background color a App About  -->
-    <div class="bg-[rgba(41,40,40,1)] py-16 px-8 md:px-32">
+    <!-- App Contact Us with an equal background color as App About -->
+    <div class="bg-[rgba(41,40,40,1)] py-12 sm:py-16 px-8 sm:px-16 md:px-32">
         <app-contact></app-contact>
     </div>
 </body>
