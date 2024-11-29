@@ -1,0 +1,53 @@
+/* Animation  degraded fast*/
+@keyframes gradientMovement {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* apply animation to background without starts */
+.animated-bg {
+    position: relative;
+    background: linear-gradient(45deg, #1f1e1e, #333333, #555555);
+    background-size: 200% 200%;
+    animation: gradientMovement 8s ease infinite;
+    overflow: hidden;
+}
+
+/* Background with galax and starts without animation */
+.stars-background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0; 
+}
+
+/* Starts floating on background */
+.stars-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background: url('/images/stardust.png') repeat;
+    animation: starAnimation 120s linear infinite;
+    z-index: -1; 
+}
+
+/* Animation start with motion */
+@keyframes starAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 1000px 1000px; 
+    }
+}

@@ -1,35 +1,54 @@
 <nav style="background-color: rgba(31, 30, 30, 1);" class="fixed top-0 left-0 w-full z-50 shadow-md">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-        <div class="relative flex h-16 items-center justify-between">
-            <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                <!-- button movil -->
-                <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                    </svg>
-                </button>
-            </div>
-            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div class="hidden sm:ml-6 sm:block">
-                    <div class="flex space-x-4">
-                        <!-- Link active background color orange -->
-                        <a href="#" class="rounded-md bg-orange-500 px-3 py-2 text-sm font-medium text-white" aria-current="page">Nosotros</a>
-                        <!-- Link with hover and text orange -->
-                        <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-orange-500 hover:text-white-500">Servicios</a>
-                        <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-orange-500 hover:text-white-500">Contáctanos</a>
-                    </div>
-                </div>
-            </div>
+  <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="relative flex h-16 items-center justify-between">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <!-- Button movil -->
+        <button (click)="toggleMenu()" type="button" 
+                class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-orange-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" 
+                aria-controls="mobile-menu" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      
+      <!-- Main Menu -->
+      <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="hidden sm:ml-6 sm:block">
+          <div class="flex space-x-4">
+            <a (click)="scrollTo('about')" 
+               [ngClass]="{'bg-orange-500': activeSection === 'about'}" 
+               class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-orange-500 hover:text-white-500">Nosotros</a>
+    
+            <a (click)="scrollTo('service')" 
+               [ngClass]="{'bg-orange-500': activeSection === 'service'}" 
+               class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-orange-500 hover:text-white-500">Servicios</a>
+    
+            <a (click)="scrollTo('contact')" 
+               [ngClass]="{'bg-orange-500': activeSection === 'contact'}" 
+               class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-orange-500 hover:text-white-500">Contáctanos</a>
+          </div>
         </div>
+      </div>
     </div>
-
-    <!-- menu movil -->
-    <div class="sm:hidden" id="mobile-menu">
-        <div class="space-y-1 px-2 pb-3 pt-2">
-            <a href="#" class="block rounded-md bg-orange-500 px-3 py-2 text-base font-medium text-white" aria-current="page">Nosotros</a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-orange-500 hover:text-orange-500">Servicios</a>
-            <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-orange-500 hover:text-orange-500">Contáctanos</a>
-        </div>
-    </div>
+  </div>
 </nav>
+
+<!-- Menu movil -->
+<div class="sm:hidden" id="mobile-menu" *ngIf="isMenuOpen" class="overflow-y-auto">
+  <div class="space-y-1 px-2 pb-3 pt-2">
+    <br>
+    <a (click)="scrollTo('about')" 
+       [ngClass]="{'bg-orange-500': activeSection === 'about'}" 
+       class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-orange-500 hover:text-orange-500">Nosotros</a>
+    
+    <a (click)="scrollTo('service')" 
+       [ngClass]="{'bg-orange-500': activeSection === 'service'}" 
+       class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-orange-500 hover:text-orange-500">Servicios</a>
+    
+    <a (click)="scrollTo('contact')" 
+       [ngClass]="{'bg-orange-500': activeSection === 'contact'}" 
+       class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-orange-500 hover:text-orange-500">Contáctanos</a>
+  </div>
+</div>
