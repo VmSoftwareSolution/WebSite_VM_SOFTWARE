@@ -35,6 +35,7 @@ In our project, we adhere to well-defined branch naming conventions to ensure a 
     - `SP` for research or exploration of a potential solution before implementation.
     - `BR` for creating or validating bug report.
     - `MG` for merging changes from different branches or resolving conflicts.  
+    - `ST` for visual or design-related updates.
 
 - **`Hu-name`**: stands for the Hypothetical User Story name, witch provides context for the branch.
 - **`Plane`**: Indicates the plane number associated with the task or issue.
