@@ -1,5 +1,5 @@
 
-//Contact 
+//Contact EmailJS
 export const environment = {
     serviceId: '',
     templateId: '',
