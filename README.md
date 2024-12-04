@@ -43,7 +43,7 @@ In our project, we adhere to well-defined branch naming conventions to ensure a 
 ## Example
 
 - **Feature Branch Example**
-    - Branch Name: `FT-VMPAG-1`
+    - Branch Name: `FT-WEBSI-1`
     - Purpose: Implementation of a feature tied to task VMPAG-1.
 
 By adhering to these branch naming conventions, we enhance clarity and traceability within our development process.
@@ -67,7 +67,7 @@ To set up and run this project, follow these steps:
 1. **Clone the repository**: Clone this project repository to your local machine using Git. You can do this by running the following command in your terminal.
 
     ```
-    https://github.com/VictorMMosqueraG/Oficial_Page_VM_SOFTWARE.git
+    https://github.com/VmSoftwareSolution/WebSite_VM_SOFTWARE.git
     ```
 
 2. **Install Node.js and Npm**: Angular requires Node.js and npm(Node package Manager). if you haven`t installed them, you can do so by running the following command in your terminal.
