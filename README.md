@@ -15,6 +15,7 @@ This project is a website for company **Vm Software**, where anyone can contact 
 - [Environments Variable](#environments-variable)
 - [Setup and Dependencies](#setup-and-dependencies)
 - [Contributing](#contributing)
+- [Test](#test)
 
 ## Branch Naming Convention
 
@@ -132,3 +133,18 @@ To set up and run this project, follow these steps:
 - Make sure your code follows the project's coding standards and passes all tests.
 - Keep your pull request focused on one task or issue.
 
+## Test
+To maintain code quality and verify functionality, follow these steps to execute the tests:
+
+1. **Run Unit Tests:** Execute the unit tests using the Angular CLI test runner. Use the following command
+    ```
+    ng test
+    ```
+This command starts the Angular test runner and runs all the unit tests defined in the project. It also opens a browser to display the test results.
+
+If any tests fail, review the error messages, identify the issues, and fix them in your code.
+
+2. **Test Coverage:** For a detailed report of test coverage, you can run:
+    ```
+    ng test --code-coverage
+    ```
